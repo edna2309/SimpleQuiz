@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\bin\Debug\netstandard2.0\SimpleQuiz.deps.json
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\bin\Debug\netstandard2.0\SimpleQuiz.dll
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\bin\Debug\netstandard2.0\ref\SimpleQuiz.dll
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\bin\Debug\netstandard2.0\SimpleQuiz.pdb
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\SimpleQuiz.csprojAssemblyReference.cache
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\Models\Kraj.xaml.g.cs
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\Models\Pitanja.xaml.g.cs
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\Models\StartPage.xaml.g.cs
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\SimpleQuiz.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\SimpleQuiz.AssemblyInfo.cs
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\SimpleQuiz.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\SimpleQuiz.dll
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\ref\SimpleQuiz.dll
+C:\Users\User\source\repos\SimpleQuiz\SimpleQuiz\SimpleQuiz\obj\Debug\netstandard2.0\SimpleQuiz.pdb

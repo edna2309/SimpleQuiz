@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleQuiz.Models.StartPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+            <Image x:Name="slicica"
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   Margin="0, 50, 0, 30"/>
+            <Label x:Name="nazivKategorije"
+                   FontSize="28"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontFamily="Naslov"/>
+            <Label x:Name="opisniTekst"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="Ostalo"
+                   FontSize="20"
+                   Padding="20"
+                   Margin="0, 0, 0, 30"/>
+
+            <Button x:Name="Start" Text="Započni kviz"
+                    HeightRequest="80"
+                    HorizontalOptions="Center"
+                    WidthRequest="160"
+                    CornerRadius="10"
+                    BackgroundColor="#57b5ac"
+                    TextColor="White"
+                    FontFamily="Ostalo1"
+                    FontSize="22"
+                    FontAttributes="Bold"
+                    Clicked="ZapocniKviz"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

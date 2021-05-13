@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:models="clr-namespace:SimpleQuiz.Models"
+             x:Class="SimpleQuiz.Models.Pitanja"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout x:Name="Sve">
+            <Image x:Name="Slika"
+                   HeightRequest="120"
+                   Margin="0,40, 0, 30"/>
+            <Label x:Name="BrojPitanja"
+                   HorizontalOptions="Center"
+                   FontSize="28"
+                   FontFamily="Naslov"
+                   TextColor="#57b5ac"/>
+            
+            <Label x:Name="Pitanje" 
+                   Padding="10,10,10,0"
+                   Margin="30,10,30,10"
+                   FontFamily="Ostalo1"
+                   FontSize="20"
+                   />
+            
+            <Grid VerticalOptions="Center"
+                  ColumnSpacing="0"
+                  Padding="10,0,10,10"
+                  Margin="50,0,50,0"
+                  RowSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <CheckBox x:Name="prviOdgovor"
+                          CheckedChanged="Odg1Checked"
+                          Color="#57b5ac"/>
+                <Label x:Name="Odgovor1"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontFamily="Ostalo"
+                       FontSize="20"/>
+
+                <CheckBox x:Name="drugiOdgovor"
+                          Grid.Row="1"
+                          Grid.Column="0"
+                          CheckedChanged="Odg2Checked"
+                          Color="#57b5ac"/>
+                <Label x:Name="Odgovor2"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontFamily="Ostalo"
+                       FontSize="20"/>
+
+                <CheckBox x:Name="treciOdgovor"
+                          Grid.Row="2"
+                          CheckedChanged="Odg3Checked"
+                          Color="#57b5ac"/>
+                <Label x:Name="Odgovor3"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontFamily="Ostalo"
+                       FontSize="20"/>
+
+                <CheckBox x:Name="cetvrtiOdgovor"
+                          Grid.Row="3"
+                          CheckedChanged="Odg4Checked"
+                          Color="#57b5ac"/>
+                <Label x:Name="Odgovor4"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontFamily="Ostalo"
+                       FontSize="20"/>
+            </Grid>    
+            
+            
+            <Button Text="DALJE"
+                    x:Name="Dalje"
+                    BackgroundColor="#c3ebe7"
+                    FontSize="22"
+                    CornerRadius="10"
+                    FontFamily="Ostalo1"
+                    FontAttributes="Bold"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    IsEnabled="false"
+                    Margin="0,45,0,0"/>
+            <Button Text="DALJE"
+                    x:Name="Dalje1"
+                    Margin="0,-55,0,0"
+                    FontFamily="Ostalo1"
+                    Clicked="nextPitanje"
+                    BackgroundColor="#8EC2BD"
+                    TextColor="white"
+                    FontSize="22"
+                    CornerRadius="10"
+                    FontAttributes="Bold"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    IsVisible="false"
+                    IsEnabled="true"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

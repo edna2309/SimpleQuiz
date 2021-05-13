@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleQuiz.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#edf7f7">
+
+    <StackLayout>
+        <StackLayout BackgroundColor="#57b5ac"
+               HeightRequest="40"
+               Padding="15">
+            <Image Source="https://cdn.discordapp.com/attachments/674554517626552321/791274011891073055/3261121.png"
+                HorizontalOptions="Start"
+                   HeightRequest="40"/>
+        </StackLayout>
+
+        <Label Text="Odaberite kategoriju"
+               HorizontalOptions="Center"
+               FontFamily="Naslov"
+               FontSize="28"
+               TextColor="#8f8f8f"
+               Margin="0, 10, 0, 5"/>
+        <Grid RowSpacing="20" ColumnSpacing="20" Padding="10"
+              HorizontalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Frame BorderColor="#DCDCDC" x:Name="Mitologija"
+                   >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameMitologija" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+                <StackLayout WidthRequest="130">
+                    <Image Source="https://cdn.discordapp.com/attachments/674554517626552321/791287461275369522/1400432.png"/>
+                    <BoxView Color="LightGray" 
+                             HeightRequest="1"/>
+                    <Label Text="Mitologija"
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           FontFamily="Ostalo"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="#DCDCDC" 
+                   x:Name="Geografija"
+                   Grid.Column="1"
+                   WidthRequest="130">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameGeografija" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+                <StackLayout>
+                    <Image Source="https://cdn.discordapp.com/attachments/674554517626552321/791288705956184084/geography.png"/>
+                    <BoxView Color="LightGray" 
+                             HeightRequest="1"/>
+                    <Label Text="Geografija"
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           FontFamily="Ostalo"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="#DCDCDC" 
+                   Grid.Row="1"
+                   WidthRequest="130"
+                   x:Name="Svemir">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameSvemir" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+                <StackLayout>
+                    <Image Source="https://cdn.discordapp.com/attachments/674554517626552321/791288784016769074/planet.png"/>
+                    <BoxView Color="LightGray" 
+                             HeightRequest="1"/>
+                    <Label Text="Svemir" 
+                           FontSize="20"
+                            HorizontalOptions="Center"
+                           FontFamily="Ostalo"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="#DCDCDC" 
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   WidthRequest="130"
+                   x:Name="Sport">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameSport" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+                <StackLayout>
+                    <Image Source="https://cdn.discordapp.com/attachments/674554517626552321/791288983275044924/fitness.png"/>
+                    <BoxView Color="LightGray" 
+                             HeightRequest="1"/>
+                    <Label Text="Sport" 
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           FontFamily="Ostalo"/>
+                </StackLayout>
+            </Frame>
+
+        </Grid>
+
+        <Button x:Name="Dalje"
+                Text="DALJE"
+                BackgroundColor="#57b5ac"
+                TextColor="White"
+                FontFamily="Ostalo1"
+                FontSize="22"
+                WidthRequest="120"
+                HeightRequest="50"
+                IsVisible="false"
+                CornerRadius="10"
+                HorizontalOptions="Center"
+                Clicked="PrelazNaStart"/>
+    </StackLayout>
+
+</ContentPage>
